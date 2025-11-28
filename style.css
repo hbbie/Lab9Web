@@ -1,0 +1,198 @@
+/* ==== GLOBAL ULTRA ==== */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: radial-gradient(circle at 20% 20%, #ff00e1, #6100ff, #00f6ff, #00ff7b);
+    background-size: 400% 400%;
+    animation: bgShift 10s ease-in-out infinite;
+    margin: 0;
+}
+
+/* ==== CONTAINER GLASS HOLOGRAM ==== */
+.container {
+    max-width: 1120px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.35), 
+                inset 0 0 25px rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.4);
+    animation: holoBorder 4s linear infinite;
+}
+
+/* ==== HEADER HOLO 3D ==== */
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff00f7, #00f7ff, #8b00ff, #ff0088);
+    background-size: 400% 400%;
+    animation: holoText 6s ease infinite;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+    letter-spacing: 2px;
+}
+
+/* ==== NAV BAR HOLOGRAM ==== */
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.nav-table td {
+    padding: 17px 0;
+    background: linear-gradient(120deg, #ff00c8, #00e5ff, #7d00ff);
+    background-size: 300% 300%;
+    animation: holoBtn 4s linear infinite;
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.nav-table a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.nav-table a:hover {
+    transform: scale(1.12);
+    text-shadow: 0 0 18px #fff;
+}
+
+/* ==== BUTTON ULTRA GACOR ==== */
+.btn {
+    background: linear-gradient(120deg, #ff00dd, #00ffea, #8a00ff);
+    background-size: 400% 400%;
+    animation: holoBtn 3s ease infinite;
+    color: white;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5),
+                0 0 15px rgba(255,255,255,0.5);
+    transition: 0.28s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px) scale(1.10);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6),
+                0 0 25px rgba(255,255,255,0.7);
+}
+
+/* ==== INPUT HOLOGRAM ==== */
+input, select {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.15);
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #00ffea;
+    box-shadow: 0 0 15px #00ffea, inset 0 0 8px #00ffff;
+}
+
+/* ==== TABLE HOLOGRAM ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.35);
+}
+
+th {
+    background: linear-gradient(120deg, #9b00ff, #00fff7, #ff00e6);
+    background-size: 300% 300%;
+    animation: holoBtn 4s ease infinite;
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    transition: 0.25s;
+}
+
+tr:hover td {
+    background: rgba(255,255,255,0.35);
+}
+
+/* ==== HOLOGRAM LINKS ==== */
+.link {
+    background: linear-gradient(90deg, #ff00e6, #00ffe1, #a200ff);
+    background-size: 300% 300%;
+    animation: holoText 4s infinite;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-shadow: 0 0 12px rgba(255,255,255,0.9);
+}
+
+/* ==== IMAGE THUMB ==== */
+.thumb {
+    width: 95px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45),
+                0 0 12px rgba(255,255,255,0.5);
+    transition: 0.3s ease;
+}
+
+.thumb:hover {
+    transform: scale(1.22) rotate(2deg);
+}
+
+/* ==== ANIMASI ULTRA ==== */
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes holoText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 120% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes holoBtn {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 120% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes holoBorder {
+    0% { border-color: #ff00cc; }
+    25% { border-color: #00eaff; }
+    50% { border-color: #a600ff; }
+    75% { border-color: #00ff9d; }
+    100% { border-color: #ff00cc; }
+}
